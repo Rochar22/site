@@ -1,0 +1,5 @@
+services:
+  misha-back:
+    build: .
+    ports:
+      - ${SERV_PORT}:8000

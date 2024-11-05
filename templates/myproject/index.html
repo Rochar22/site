@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интеллектуальный анализ тегов фильмов</title>
+    <style>
+        /* Основной фон и футуристический стиль */
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #E0E0E0;
+            background: #0f0f0f;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        /* Контейнер */
+        .container {
+            max-width: 900px;
+            padding: 30px;
+            background: #1a1a2e;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.3), 0 0 10px rgba(0, 128, 255, 0.5);
+        }
+        /* Заголовки и текст */
+        h1, h2 {
+            color: #00e0ff;
+            font-weight: bold;
+        }
+        .slide {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: #162447;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .slide:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+        }
+        .title-slide {
+            text-align: center;
+        }
+        .title-slide h1 {
+            font-size: 2.5em;
+        }
+        .title-slide h3, .title-slide p {
+            font-size: 1.2em;
+            color: #00d1ff;
+        }
+        .slide img {
+            width: 100%;
+            height: auto;
+            margin: 15px 0;
+            border-radius: 10px;
+        }
+        .slide p, .slide ul, .slide ol {
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="slide title-slide">
+            <h1>Интеллектуальный анализ тегов фильмов с помощью нейронных сетей</h1>
+            <h3>Ведущий проекта: Михаил Заморский, 10 "Б"</h3>
+            <p>Преподаватели:</p>
+            <p>Потапова Дарья Александровна</p>
+            <p>Карамышева Екатерина Олеговна</p>
+        </div>
+        <!-- Титульный слайд -->
+        <div class="slide">
+            <h1>Интеллектуальный анализ тегов фильмов с помощью нейронных сетей</h1>
+            <p>Применение глубоких нейронных сетей для автоматического анализа и классификации тегов фильмов позволяет улучшить рекомендации и оптимизировать поиск контента.</p>
+            <img src="https://img.freepik.com/premium-vector/movie-theater-poster-design-concept-with-movie-cinema-elements-cinema-banner-design-concept_628995-1189.jpg?ga=GA1.1.623090998.1729516993&semt=ais_hybrid" alt="Анализ тегов фильмов">
+        </div>
+
+        <!-- Актуальность -->
+        <div class="slide">
+            <h2>Актуальность</h2>
+            <p>С увеличением объема мультимедийного контента возрастает потребность в автоматическом анализе данных. Нейронные сети помогают лучше анализировать и классифицировать теги, улучшая рекомендации и оптимизируя навигацию по огромным коллекциям фильмов.</p>
+            <img src="https://img.freepik.com/free-vector/machine-learning-isometric-composition-with-text-cubes-with-code-robotic-head-chip-with-academic-hat-vector-illustration_1284-82015.jpg?t=st=1730710589~exp=1730714189~hmac=b4b1ece943bf1182df5b7a1cd1e25a1a0d60cd395e638a3eb3889560d11d8322&w=826" alt="Рекомендательные системы">
+        </div>
+
+        <!-- Цель работы -->
+        <div class="slide">
+            <h2>Цель работы</h2>
+            <p>Разработка модели на основе нейронной сети, способной точно анализировать и классифицировать теги фильмов. Модель улучшит персонализацию рекомендаций и ускорит навигацию, делая поисковые системы более удобными и адаптивными для пользователей.</p>
+            <img src="https://img.freepik.com/free-vector/isometric-organizational-chart-template_23-2149077702.jpg?ga=GA1.1.623090998.1729516993&semt=ais_hybrid" alt="Цель работы">
+        </div>
+
+        <!-- Задачи -->
+        <div class="slide">
+            <h2>Задачи</h2>
+            <ul>
+                <li>Сбор и подготовка датасета с тегами, представляющими жанры, тематику и стиль фильмов.</li>
+                <li>Создание и обучение нейронной сети для анализа и классификации тегов.</li>
+                <li>Оценка качества модели на основе точности, F1-score и других метрик.</li>
+                <li>Дальнейшая оптимизация и настройка модели на основе обратной связи.</li>
+            </ul>
+            <img src="https://img.freepik.com/premium-vector/artificial-intelligence-as-software-that-can-helps-people-business-company_992397-16829.jpg?ga=GA1.1.623090998.1729516993&semt=ais_hybrid" alt="Этапы реализации">
+        </div>
+
+        <!-- Этапы изучения -->
+        <div class="slide">
+            <h2>Этапы изучения</h2>
+            <ol>
+                <li>Обзор современных исследований в области анализа текстовых данных и рекомендательных систем.</li>
+                <li>Изучение архитектур нейронных сетей для обработки текстовой информации (например, BERT и RNN).</li>
+                <li>Разработка и тестирование модели, основанной на архитектуре трансформеров.</li>
+                <li>Тестирование и настройка на основе данных валидации и обратной связи.</li>
+            </ol>
+            <img src="https://img.freepik.com/premium-photo/computer-monitor-with-keyboard-cup-coffee_1004054-8398.jpg?ga=GA1.1.623090998.1729516993&semt=ais_hybrid" alt="Этапы изучения">
+        </div>
+
+        <!-- Методы исследования -->
+        <div class="slide">
+            <h2>Методы исследования</h2>
+            <p>Для построения модели используется язык программирования <strong>Python</strong>, а также библиотеки <strong>TensorFlow</strong> и <strong>Keras</strong> для создания нейронных сетей. Архитектура BERT и её модификации позволяют эффективно обрабатывать текстовые данные, учитывая контекст и значение тегов. Используются методы обучения с учителем, оптимизация градиентного спуска и оценка на основе метрик точности и F1-score.</p>
+            <img src="https://i.pinimg.com/originals/94/38/03/943803c137dc211e2279dbe80a17c401.png" alt="Методы исследования">
+        </div>
+
+        <!-- Результат проекта -->
+        <div class="slide">
+            <h2>Результат проекта</h2>
+            <p>Модель покажет высокую точность в классификации тегов фильмов, улучшив релевантность рекомендаций. Тестирование подтвердит эффективность модели для использования в реальных системах рекомендаций, что поможет пользователям быстрее находить интересующий их контент.</p>
+            <img src="https://img.freepik.com/free-vector/clock-increasing-chart-workflow-productivity-increase-work-performance-optimization-efficiency-indicator-rising-effectiveness-metrics-vector-isolated-concept-metaphor-illustration_335657-2718.jpg?t=st=1730700185~exp=1730703785~hmac=2074f8518ac026a46c758cf96e821299a0995811abab2934ea5f85d3f3fb5d7d&w=826" alt="Результаты">
+        </div>
+
+        <!-- Перспектива проекта -->
+        <div class="slide">
+            <h2>Перспектива проекта</h2>
+            <p>Дальнейшее развитие проекта может включать анализ пользовательских отзывов и интеграцию с данными о предпочтениях для повышения точности рекомендаций. Кроме того, модель можно расширить для анализа других типов контента, таких как сериалы, игры и шоу, чтобы создать более комплексную систему рекомендаций.</p>
+            <img src="https://img.freepik.com/free-vector/business-concept-vector-illustration-businessman-who-running-with-increase-graphic-chart-see-imagination-future_1150-39743.jpg?t=st=1730700229~exp=1730703829~hmac=708fca0ca85c16afe4a30f761eb9038b2db1c47da79ca2d5b927165738190d33&w=1380" alt="Перспективы проекта">
+        </div>
+
+    </div>
+</body>
+</html>
